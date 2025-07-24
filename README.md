@@ -1,4 +1,4 @@
-# 🌤️ Weather App
+# Weather App
 
 A simple and elegant weather application built with **React**, **Vite**, **Tailwind CSS**, and powered by the [WeatherAPI](https://www.weatherapi.com/). This project showcases current weather data based on user-inputted city names with real-time API integration and local state management.
 
@@ -7,7 +7,7 @@ A simple and elegant weather application built with **React**, **Vite**, **Tailw
 https://wheater-web-eosin.vercel.app/
 ---
 
-## 🚀 Stack Used
+## Stack Used
 
 - **React** – Frontend UI library
 - **Vite** – Blazing fast dev server and build tool
@@ -16,7 +16,7 @@ https://wheater-web-eosin.vercel.app/
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository**
    ```bash
@@ -42,7 +42,7 @@ https://wheater-web-eosin.vercel.app/
     npm run start
 
 
-5. ***Functionality***
+## ***Functionality***
 - 🔍 ***City Search***: Users can input a city name to get real-time weather data.
 - ✅ ***Success Toast***: A confirmation toast is shown when a city is successfully found.
 - ❌ ***Error Toast***: If a city is not found or an API error occurs, an error toast is displayed.
@@ -52,9 +52,12 @@ https://wheater-web-eosin.vercel.app/
 - 📦 ***Placeholder UI***: When no city is selected yet, a placeholder card is shown.
 - 📱 **Responsive Design**: All components are fully responsive, built with Tailwind CSS, and adapt seamlessly to mobile, tablet, and desktop layouts.
 
-6. ***Approach***
+## ***Approach***
 - Leveraged Tailwind CSS for consistent design, quick iteration, and responsive layouts.
 - Applied a modular architecture with utility functions and reusable components like WeatherCard, TempToggle, and toast feedback.
 - Focused on error handling and user feedback with toast notifications, and built a smooth initial state using placeholder components.
 - No route system was created as it is just a page and a simple mvp demonstration
 - Created a hook simulating the functionality of react-query, since we only have one request in the project.
+
+
+
