@@ -3,6 +3,9 @@
 A simple and elegant weather application built with **React**, **Vite**, **Tailwind CSS**, and powered by the [WeatherAPI](https://www.weatherapi.com/). This project showcases current weather data based on user-inputted city names with real-time API integration and local state management.
 
 ---
+# Demo
+https://wheater-web-eosin.vercel.app/
+---
 
 ## 🚀 Stack Used
 
