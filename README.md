@@ -57,3 +57,4 @@ https://wheater-web-eosin.vercel.app/
 - Applied a modular architecture with utility functions and reusable components like WeatherCard, TempToggle, and toast feedback.
 - Focused on error handling and user feedback with toast notifications, and built a smooth initial state using placeholder components.
 - No route system was created as it is just a page and a simple mvp demonstration
+- Created a hook simulating the functionality of react-query, since we only have one request in the project.
