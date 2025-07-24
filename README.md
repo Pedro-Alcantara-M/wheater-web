@@ -1,69 +1,56 @@
-# React + TypeScript + Vite
+# 🌤️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and elegant weather application built with **React**, **Vite**, **Tailwind CSS**, and powered by the [WeatherAPI](https://www.weatherapi.com/). This project showcases current weather data based on user-inputted city names with real-time API integration and local state management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Stack Used
 
-## Expanding the ESLint configuration
+- **React** – Frontend UI library
+- **Vite** – Blazing fast dev server and build tool
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **WeatherAPI** – External weather data provider
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Installation & Setup
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. **Install dependencies**
+    ```bash
+   npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. **Set up environment variables**
+- Copy the example file:
+    ```bash
+   cp .env.example .env
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Inside the new .env file, replace the placeholder with your actual WeatherAPI key:
+    ```bash
+    VITE_BASE_URL=""
+    VITE_WEATHER_API_KEY=""
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. ***Run the app locally***
+    ```bash
+    npm run start
+
+
+5. ***Functionality***
+- 🔍 ***City Search***: Users can input a city name to get real-time weather data.
+- ✅ ***Success Toast***: A confirmation toast is shown when a city is successfully found.
+- ❌ ***Error Toast***: If a city is not found or an API error occurs, an error toast is displayed.
+- 🌡️ ***Temperature Toggle***: Users can switch between Celsius (°C) and Fahrenheit (°F) with a toggle.
+- 💾 ***Persistent State***: The last searched city is stored in localStorage, allowing it to persist across page reloads.
+- 🦴 ***Skeleton Loading***: While fetching weather data, skeleton loaders are displayed to enhance the perceived performance and improve UX during loading states.
+- 📦 ***Placeholder UI***: When no city is selected yet, a placeholder card is shown.
+- 📱 **Responsive Design**: All components are fully responsive, built with Tailwind CSS, and adapt seamlessly to mobile, tablet, and desktop layouts.
+
+6. ***Approach***
+- Leveraged Tailwind CSS for consistent design, quick iteration, and responsive layouts.
+- Applied a modular architecture with utility functions and reusable components like WeatherCard, TempToggle, and toast feedback.
+- Focused on error handling and user feedback with toast notifications, and built a smooth initial state using placeholder components.
+- No route system was created as it is just a page and a simple mvp demonstration
